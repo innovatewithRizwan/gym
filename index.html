@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym - Get Fit, Stay Strong</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?https://maps.app.goo.gl/H7kbuB3JBjd8YgAc6&callback=initMap">
+</script>
+
+
+</head>
+<body>
+
+    <div id="loader"></div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>GymName</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#membership">Membership Plans</a></li>
+        <li><a href="#schedule">Class Schedule</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Video or Image -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Transform Your Body and Mind</h2>
+            <p>Achieve your fitness goals with the best trainers and modern equipment.</p>
+            <a href="contact.html" class="cta-button">Join Now</a>
+        </div>
+        <div class="hero-background">
+            <!-- Background Video -->
+            <video autoplay muted loop id="hero-video">
+                <source src="fitess.mp4" type="video/mp4">
+            </video>
+            <!-- If you prefer an image background, use this instead:
+            <img src="gym-background.jpg" alt="Gym Background">
+            -->
+        </div>
+    </section>
+
+    <!-- Overview of the Gym's Unique Features -->
+    <section id="features">
+        <div class="feature-card">
+            <h3>Experienced Trainers</h3>
+            <p>Work with certified trainers who customize your fitness journey.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Modern Equipment</h3>
+            <p>Access the latest gym equipment to maximize your workouts.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Flexible Timings</h3>
+            <p>Train at your convenience with 24/7 access to the gym.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <h3>Our Mission</h3>
+            <p>At GymName, our mission is to help you achieve your fitness goals with personalized programs, expert guidance, and state-of-the-art equipment. We believe in empowering people to lead healthier, more active lives.</p>
+
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Passion:</strong> We are passionate about fitness and strive to inspire others to embrace an active lifestyle.</li>
+                <li><strong>Integrity:</strong> We maintain the highest standards of honesty, professionalism, and trust.</li>
+                <li><strong>Community:</strong> We foster a supportive and motivating environment where everyone is encouraged to achieve their personal best.</li>
+            </ul>
+
+            <h3>Our History</h3>
+            <p>Founded in 2010, GymName started with a small group of fitness enthusiasts and has since grown into a state-of-the-art fitness center. Our commitment to quality and service has made us a trusted gym in the local community.</p>
+        </div>
+
+        <!-- Trainer Bios Section -->
+        <div class="trainer-bios">
+            <h3>Meet Our Trainers</h3>
+            <div class="trainer-bio">
+                <img src="trainer1.jpg" alt="Trainer 1">
+                <h4>Trainer 1</h4>
+                <p>With over 10 years of experience, Trainer 1 specializes in strength training and weight loss. Known for their motivational approach, they are passionate about helping clients achieve their fitness goals.</p>
+            </div>
+            <div class="trainer-bio">
+                <img src="trainer2.jpg" alt="Trainer 2">
+                <h4>Trainer 2</h4>
+                <p>Trainer 2 is a certified yoga instructor with a focus on flexibility and mindfulness. Their classes are designed to promote overall wellness and mental clarity.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<!-- <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-content">
+        <div class="service-card">
+            <img src="image4.jpeg" alt="Personal Training">
+            <h3>Personal Training</h3>
+            <p>Our certified trainers will create a personalized fitness plan to help you achieve your goals faster.</p>
+            <a href="#personal-training" class="service-link">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="image.jpg" alt="Group Classes">
+            <h3>Group Classes</h3>
+            <p>Join our high-energy group fitness classes for a fun and motivating workout environment.</p>
+            <a href="#group-classes" class="service-link">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="image2.jpg" alt="Yoga">
+            <h3>Yoga</h3>
+            <p>Relax your body and mind with our calming yoga sessions, suitable for all skill levels.</p>
+            <a href="#yoga" class="service-link">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="image3.jpeg" alt="Nutrition Coaching">
+            <h3>Nutrition Coaching</h3>
+            <p>Get expert guidance on healthy eating to complement your fitness regimen and reach your full potential.</p>
+            <a href="#nutrition" class="service-link">Learn More</a>
+        </div>
+    </div>
+</section> -->
+
+<section id="programs">
+    <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        <p class="section-description">
+            Explore a wide range of fitness programs designed to suit every need. From building strength to finding inner peace, we've got you covered.
+        </p>
+        <div class="programs-grid">
+            <div class="program-box">
+                <img src="weight_training.jpg" alt="Weight Training">
+                <div class="program-content">
+                    <h3>Weight Training</h3>
+                    <p>Build muscle and strength with our expert-guided weight training programs.</p>
+                    <!-- <button class="btn-learn-more">Learn More</button> -->
+                </div>
+            </div>
+            <div class="program-box">
+                <img src="cardio.jpeg" alt="Cardio Fitness">
+                <div class="program-content">
+                    <h3>Cardio Fitness</h3>
+                    <p>Boost your endurance and cardiovascular health with our tailored cardio sessions.</p>
+                    <!-- <button class="btn-learn-more">Learn More</button> -->
+                </div>
+            </div>
+            <div class="program-box">
+                <img src="image.jpg" alt="Yoga & Flexibility">
+                <div class="program-content">
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Relax your mind and improve flexibility with our rejuvenating yoga classes.</p>
+                    <!-- <button class="btn-learn-more">Learn More</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const programBoxes = document.querySelectorAll(".program-box");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform = "translateY(0)";
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        programBoxes.forEach((box) => {
+            box.style.opacity = "0";
+            box.style.transform = "translateY(50px)";
+            box.style.transition = "all 0.5s ease";
+            observer.observe(box);
+        });
+    });
+</script>
+
+
+
+<!-- Membership Plans Section -->
+<section id="membership">
+    <h2>Membership Plans</h2>
+    <div class="membership-plans">
+        <div class="plan-card">
+            <h3>Basic Plan</h3>
+            <p class="price">$29 / month</p>
+            <ul>
+                <li>Access to gym facilities</li>
+                <li>1 Free Group Class per week</li>
+                <li>Basic Equipment</li>
+                <li>Flexible Timings</li>
+            </ul>
+            <a href="#signup" class="btn">Sign Up</a>
+        </div>
+
+        <div class="plan-card">
+            <h3>Premium Plan</h3>
+            <p class="price">$49 / month</p>
+            <ul>
+                <li>Access to gym facilities</li>
+                <li>Unlimited Group Classes</li>
+                <li>Advanced Equipment</li>
+                <li>Personalized Fitness Plan</li>
+                <li>1 Free Personal Training Session</li>
+            </ul>
+            <a href="#signup" class="btn">Sign Up</a>
+        </div>
+
+        <div class="plan-card special-offer">
+            <h3>VIP Plan</h3>
+            <p class="price">$79 / month</p>
+            <ul>
+                <li>Access to gym facilities</li>
+                <li>Unlimited Group Classes & Yoga</li>
+                <li>Advanced Equipment & VIP Area</li>
+                <li>Personalized Fitness Plan</li>
+                <li>Unlimited Personal Training Sessions</li>
+                <li>Priority Booking</li>
+            </ul>
+            <p class="offer">Special Offer: 20% off for the first 3 months!</p>
+            <a href="#signup" class="btn">Sign Up</a>
+        </div>
+    </div>
+</section>
+
+<!-- Class Schedule Section -->
+<section id="schedule">
+    <h2>Class Schedule</h2>
+    <div class="schedule-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Yoga</th>
+                    <th>Zumba</th>
+                    <th>Spinning</th>
+                    <th>Boxing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>6:00 AM</td>
+                    <td>7:00 AM</td>
+                    <td>8:00 AM</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>7:00 AM</td>
+                    <td>6:00 PM</td>
+                    <td>8:00 AM</td>
+                    <td>7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>6:00 AM</td>
+                    <td>7:00 AM</td>
+                    <td>8:00 AM</td>
+                    <td>6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>7:00 AM</td>
+                    <td>6:00 PM</td>
+                    <td>8:00 AM</td>
+                    <td>7:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>6:00 AM</td>
+                    <td>7:00 AM</td>
+                    <td>8:00 AM</td>
+                    <td>6:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="#booking" class="btn">Book a Class</a>
+</section>
+
+<!-- Booking Section -->
+<!-- <section id="booking">
+    <h2>Book a Class</h2>
+    <form action="book_class.php" method="POST">
+        <label for="class">Choose a Class:</label>
+        <select name="class" id="class" required>
+            <option value="Yoga">Yoga</option>
+            <option value="Zumba">Zumba</option>
+            <option value="Spinning">Spinning</option>
+            <option value="Boxing">Boxing</option>
+        </select>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit" class="btn">Book Now</button>
+    </form>
+</section> -->
+
+<section id="book-class">
+    <div class="container">
+        <h2 class="section-title">Book a Class</h2>
+        <p class="section-description">
+            Reserve your spot today and take the first step towards a healthier, fitter you!
+        </p>
+        <div class="booking-content">
+            <div class="booking-text">
+                <p>Choose from our wide range of fitness classes designed to suit your goals. Limited spots available!</p>
+                <img src="image3.jpeg" alt="Gym Class Booking">
+            </div>
+            <form class="booking-form" action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                <label for="class-type">Class Type:</label>
+                <select id="class-type" name="class-type" required>
+                    <option value="yoga">Yoga</option>
+                    <option value="zumba">Zumba</option>
+                    <option value="weight-training">Weight Training</option>
+                    <option value="cardio">Cardio</option>
+                </select>
+                <button type="submit" class="btn-submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-description">Experience our gym through these moments of energy, strength, and transformation.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="image.jpg" alt="Gym Image 1"></div>
+            <div class="gallery-item"><img src="image2.jpg" alt="Gym Image 2"></div>
+            <div class="gallery-item"><img src="image3.jpeg" alt="Gym Image 3"></div>
+            <div class="gallery-item"><img src="image4.jpeg" alt="Gym Image 4"></div>
+            <div class="gallery-item"><img src="cardio.jpeg" alt="Gym Image 5"></div>
+            <div class="gallery-item"><img src="image2.jpg" alt="Gym Image 6"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Members Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"Joining this gym has been a life-changing experience. The trainers are so professional, and the facilities are top-notch!"</p>
+            <h4>- Rahul Sharma</h4>
+        </div>
+        <div class="testimonial">
+            <p>"I love the group classes here. They're fun, challenging, and exactly what I needed to stay motivated."</p>
+            <h4>- Priya Kapoor</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The gym's flexible timings and modern equipment are perfect for my busy schedule. Highly recommend!"</p>
+            <h4>- Aman Verma</h4>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const testimonials = document.querySelectorAll(".testimonial");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = "translateY(0)";
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        testimonials.forEach((testimonial) => {
+            testimonial.style.opacity = 0;
+            testimonial.style.transform = "translateY(20px)";
+            testimonial.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(testimonial);
+        });
+    });
+</script>
+
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+
+<div id="particles-js"></div>
+
+
+
+<!-- <section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out with any questions or visit us at our location.</p>
+
+        <!- Contact Form -->
+        <!-- <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div> -->
+
+         <!-- Gym Location and Social Links  -->
+         <div class="contact-details">
+            <div class="address">
+                <h3>Our Location</h3>
+                <p>123 Fitness Street, Gymville, India</p>
+                <div id="map"></div>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
